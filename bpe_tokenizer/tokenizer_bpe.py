@@ -2,7 +2,7 @@ import regex as re
 from collections import defaultdict
 import cProfile, pstats
 from typing import Iterable, Iterator
-from cs336_basics.train_bpe import BPE
+from bpe_tokenizer.train_bpe import BPE
 import pickle
 
 PAT = r"""'(?:[sdmt]|ll|ve|re)| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""" #Pre-tokenization pattern

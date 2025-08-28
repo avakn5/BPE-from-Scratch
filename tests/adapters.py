@@ -8,8 +8,8 @@ import numpy.typing as npt
 import torch
 from torch import Tensor
 
-from cs336_basics.train_bpe import BPE
-from cs336_basics.tokenizer_bpe import BPE_Tokenizer
+from bpe_tokenizer.train_bpe import BPE
+from bpe_tokenizer.tokenizer_bpe import BPE_Tokenizer
 
 def run_linear(
     d_in: int,
