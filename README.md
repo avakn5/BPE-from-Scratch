@@ -1,6 +1,6 @@
 # A BPE (Byte Pair Encoding) Implementation from Scratch
 
-This repository contains my implementation of Byte Pair Encoding (BPE) from scratch. 
+Minimal, Byte Pair Encoding (BPE) implementatiom from scratch. 
 
 As part of a self-study I followed CS336 — Spring 2025 Assignment 1 instructions (*cs336_spring2025_assignment1_basics.pdf*). Look at section 2 for BPE instructions.
 
@@ -39,8 +39,8 @@ tokenizer = BPE_Tokenizer(vocab, merges, special_tokens=["<|endoftext|>"])
 
 # encoding/decoding
 sample_text = "Once upon a time, there was a little robot who loved to code.<|endoftext|>"
-encoded = tokenizer.encode(sample_text)
-decoded = tokenizer.decode(encoded)
+encoded = tokenizer.encode(sample_text) # string ->token
+decoded = tokenizer.decode(encoded) # token -> string
 ```
 
 ### STEPS to the BPE implementation: 
