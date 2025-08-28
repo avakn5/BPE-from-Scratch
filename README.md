@@ -1,8 +1,6 @@
 # A BPE (Byte Pair Encoding) Implementation from Scratch
 
-Minimal, Byte Pair Encoding (BPE) implementatiom from scratch. 
-
-As part of a self-study I followed CS336 — Spring 2025 Assignment 1 instructions (*cs336_spring2025_assignment1_basics.pdf*). Look at section 2 for BPE instructions.
+Minimal, Byte Pair Encoding (BPE) implementatiom from scratch [^1][^2].
 
 Byte Pair Encoding is a subword tokenization algorithm originally adapted for NLP by Sennrich et al., Neural Machine Translation of Rare Words with Subword Units (2016). It works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary.
 
@@ -62,3 +60,7 @@ decoded = tokenizer.decode(encoded) # token -> string
 * Passing all assignment tests:
 &nbsp;BPE training: 3/3 tests passed
 &nbsp; Tokenizer: 23/23 tests passed
+
+
+[^1]: *Stanford CS336: Language Modeling from Scratch — Assignment 1 Instructions*. Stanford University, 2025. [https://stanford-cs336.github.io/spring2025/](https://stanford-cs336.github.io/spring2025/)  
+[^2]: Sennrich, R., Haddow, B., & Birch, A. (2016). *Neural Machine Translation of Rare Words with Subword Units*. Proceedings of ACL. [https://arxiv.org/abs/1508.07909](https://arxiv.org/abs/1508.07909)
