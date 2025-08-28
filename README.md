@@ -1,12 +1,30 @@
 # A BPE (Byte Pair Encoding) Implementation from Scratch
 
-Minimal, Byte Pair Encoding (BPE) implementatiom from scratch [^1][^2].
+Minimal Byte Pair Encoding (BPE) implementatiom from scratch [^1][^2].
 
-Byte Pair Encoding is a subword tokenization algorithm originally adapted for NLP by Sennrich et al., Neural Machine Translation of Rare Words with Subword Units (2016). It works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary.
+Byte Pair Encoding is a subword tokenization algorithm originally adapted for NLP by [^2]. It works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary.
 
 __The codebase includes extensive inline comments to aid understanding of the BPE implementation.__
 
 ![Transformer Architecture](cs336_basics/figure/BPE_figure.jpeg)
+
+### Repository Structure
+
+```
+cs336_basics/
+│
+├── bpe/                                # Byte-Pair Encoding (BPE) tokenizer
+│   ├── __init__.py                    
+│   ├── Pretokenization_example.py      
+│   ├── Tokenizer_bpe.py                # BPE tokenizer implementation
+│   └── Train_bpe.py                    # BPE training script
+│
+├── tests/                              # testing scripts
+│
+├── README.md                         
+├── pyproject.toml                     # Metadata and dependencies
+└── uv.lock                            # Lockfile for reproducibility
+```
 
 ### Quick Start
 
