@@ -3,14 +3,14 @@
 Minimal Byte Pair Encoding (BPE) implementation from scratch [^1][^2], a subword tokenization algorithm used in modern large language models (LLMs).
 
 
-Byte Pair Encoding is a subword tokenization algorithm originally adapted for NLP by [^2]. It works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary. The following implementation includes extensive inline comments to aid understanding of the BPE implementation.
+Byte Pair Encoding, adapted for NLP by [^2], works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary. The following implementation includes extensive inline comments to aid understanding of the BPE implementation.
 
-![Transformer Architecture](cs336_basics/figure/BPE_figure.jpeg)
+![Transformer Architecture](bpe_tokenizer/figure/BPE_figure.jpeg)
 
 ### Repository Structure
 
 ```
-cs336_basics/
+bpe_tokenizer/
 │
 ├── bpe/                                # Byte-Pair Encoding (BPE) tokenizer
 │   ├── __init__.py                    
@@ -29,14 +29,14 @@ cs336_basics/
 
 Setup
 ```
-bashgit clone https://github.com/avakn5/cs336_basics
+bashgit clone https://github.com/avakn5/BPE-from-Scratch.git
 pip install -e . && mkdir -p data && cd data
 wget https://huggingface.co/datasets/roneneldan/TinyStories/resolve/main/TinyStoriesV2-GPT4-train.txt
 ```
 
 Train the BPE Tokenizer
 ```
-from cs336_basics.train_bpe import BPE
+from bpe_tokenizer.train_bpe import BPE
 
 # Initialize BPE with special tokens
 bpe = BPE(special_tokens=["<|endoftext|>"])
