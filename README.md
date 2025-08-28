@@ -1,6 +1,6 @@
 # A BPE (Byte Pair Encoding) Implementation from Scratch
 
-Minimal Byte Pair Encoding (BPE) implementatiom from scratch [^1][^2], a subword tokenization algorithm used in modern large language models (LLMs).
+Minimal Byte Pair Encoding (BPE) implementation from scratch [^1][^2], a subword tokenization algorithm used in modern large language models (LLMs).
 
 
 Byte Pair Encoding is a subword tokenization algorithm originally adapted for NLP by [^2]. It works by iteratively replacing the most frequent pair of symbols in the text with a new symbol, effectively building a vocabulary. The following implementation includes extensive inline comments to aid understanding of the BPE implementation.
